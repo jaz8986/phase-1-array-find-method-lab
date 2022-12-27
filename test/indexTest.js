@@ -69,7 +69,8 @@ expect(superbowlWin(record)).to.equal('2015');
   });
 
   it('returns undefined if the record has no win objects', function() {
-    const sadReality =  [ { result: "N/A" }, { result: "N/A" }, { result: "N/A" } ]
+    const sadReality =  [ { year:"", result: "N/A" }, { year:"", result: "N/A" }, { year:"", result: "N/A" } ]
+
     expect(superbowlWin(sadReality)).to.equal(undefined)
   });
 });
